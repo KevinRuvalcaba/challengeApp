@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.job_layout.view.*
 
-class JobRecyclerAdapter {
+class JobRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var jobs: List<Job> = ArrayList()
 
