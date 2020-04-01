@@ -49,8 +49,8 @@ class JobRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         fun bind(job: Job) {
             title.text = job.title
-            vacants.text = job.vacants
-            hours.text = job.vacants
+            vacants.text = "Vacantes: ${job.vacants}"
+            hours.text = job.hours
         }
 
     }
