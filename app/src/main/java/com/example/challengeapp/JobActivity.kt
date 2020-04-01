@@ -13,6 +13,9 @@ class JobActivity : AppCompatActivity() {
 
         val job = intent.getSerializableExtra("job") as? Job
         textView.setText(job!!.title)
+        locationView.setText(job!!.location)
+        descView.setText(job!!.description)
+        skillsView.setText(job!!.skills)
     }
 
 }

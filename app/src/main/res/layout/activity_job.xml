@@ -7,13 +7,53 @@
     tools:context=".JobActivity">
 
     <TextView
-        android:id="@+id/textView"
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Titulo"
+    android:textSize="30sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/descView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Job Detail"
-        android:textSize="30sp"
+        android:text="Job Desc"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <TextView
+        android:id="@+id/locationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job location"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descView"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/skillsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job skills"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationView"
+        app:layout_constraintVertical_bias="0.394" />
 </androidx.constraintlayout.widget.ConstraintLayout>
